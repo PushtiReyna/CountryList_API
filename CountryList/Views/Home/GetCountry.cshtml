@@ -1,7 +1,22 @@
-﻿
-@{
-    ViewData["Title"] = "GetCountry";
-}
+﻿@*﻿@model CountryList.Models.CountryData.Data*@
 
 <h1>GetCountry</h1>
 
+<table class="table">
+    <tr class="text-center">
+        <th>Id</th>
+        <th>countryName</th>
+        <th>iso2</th>
+        
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr class="Text-center">
+            <td>@item.countryId</td>
+            <td>@item.countryName</td>
+            <td>@item.iso2</td>
+           
+        </tr>
+    }
+</table>
+             
